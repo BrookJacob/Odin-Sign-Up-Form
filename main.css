@@ -1,1 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", monospace;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.1fr [col-start] 1.75fr [col-start];
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./assets/img/zeynep-sumer-jtLc2j0pQbQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-header {
+    position: relative;
+    top: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.logo {
+    color: whitesmoke;
+    height: 6rem;
+}
+
+.header {
+    font-family: "Roboto", monospace;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1;
+    color: whitesmoke;
+}
+
+.attribution {
+    position: absolute;
+    color: lightblue;
+    bottom: 0;
+    font-size: .9rem;
+}
+
+.attribution a:link {
+    color: lightblue;
+}
+
+.attribution a:visited {
+    color: mediumaquamarine;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.sign-up-text {
+    font-family: 'Roboto', monospace;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 0 4vw;
+}
+
+.sign-up-form {
+    padding: 0 4vw;
+    margin: 5vh 0;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, .1);
+    background-color: white;
+}
+
+.sign-up-form>form>p {
+    color: #535353;
+}
+
+fieldset {
+    display: flex;
+    gap: 5vw;
+    margin: 0 0 5vh 0;
+    padding: 0;
+    border: none;
+}
+
+.sign-up-form>form>div {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    width: clamp(250px, 300px, 350px);
+    height: 1.8rem;
+    border-radius: 5px;
+    background-color: rgb(252, 252, 252);
+}
+
+input:focus {
+    outline: 1px solid rgb(67, 67, 255);
+    outline-offset: -1px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.151);
+}
+
+.create-account {
+    padding: 0 4vw;
+    font-weight: 900;
+}
+
+button {
+    width: 250px;
+    height: 2.9rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.151);
+    font-family: "Roboto", monospace;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: white;
+    background-color: darkolivegreen;
+}
